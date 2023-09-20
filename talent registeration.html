@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Project</title>
+</head>
+<style>
+            body {
+            color: #ffffff;
+            background-image: url(https://images.unsplash.com/photo-1542684377-0b875fde9563?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cG9ydHJhaXQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&w=1000&q=80);
+            background-attachment: fixed;
+            background-position: center;
+            background-size:100%;
+        }
+
+        header {
+            background-color: #0c65bd75;
+            color: #ffffff;
+            padding: 5px;
+            text-align: center;
+        }
+        
+        nav {
+            background-color:  #379683;
+            padding: 5px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #edf5e1;
+            text-decoration: none;
+            margin: 0 10px;
+            
+        }
+
+        .container {
+            width: 80%;
+            margin:  auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #edf5e1;
+            text-shadow: 0px 0px 10px #edf5e1;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        form {
+            border: 5px solid #379683;
+            padding: 50px;
+            margin-top: 20px;
+            border-radius: 25px;
+
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+
+        button:hover {
+            background-color: #ffffff;
+            box-shadow: 0px 0px 30px #ff0000;
+            color: #ff0000;
+        }
+
+        .dropdown{
+            display: none;
+            padding: 5px;
+        }
+
+        input[name="options"]:checked + .dropdown {
+            display:grid;
+        }
+
+        .Survey{
+            text-align: center;
+        }
+
+        #href{
+            text-align: center;
+        }
+
+        a{
+            color: #00e1ff;;
+        }
+
+        a:hover{
+            color: rgb(255, 255, 255);
+            text-shadow:0px 0px 10px #00e1ff;
+            font-style: italic;
+        }
+        
+</style>
+<body>
+    <img src="">
+    <header>
+        <h1>TALENT HUNT</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Register</a>
+        <a href="#">Profile</a>
+        <a href="#">Updates</a>
+    </nav>
+    <div class="container">
+        <h2 class="Registeration">Registeration Form</h2>
+        <form>
+            <h2>FILL YOUR DETAILS:</h2>
+            <HR/><BR/>
+            <label for="Name">Name</label>
+            <input class="dabba" type="text" id="Name" name="Name" placeholder="Enter Your First Name">
+            <label for="Surname">Surname (if applicable)</label>
+            <input class="dabba" type="text" id="Surname" name="Surname" placeholder="Enter Your Surname">
+            <label for="Age">Age</label>
+            <input class="dabba" type="number" id="Agw" name="Age" placeholder="Enter Your Age">
+            <label for="Phone">Phone number</label>
+            <input class="dabba" type="number" id="Phone" name="Phone" placeholder="Enter Your Phone Number">
+            <label for="password">Password</label>
+            <input class="dabba" type="password" id="password" name="password" placeholder="Set a password">
+            
+            <p id="question1">SELECT YOUR STREAM :</p>
+            <label>
+                <input type="radio" name="options" value="B.E."> B.E.
+                <div class="dropdown">
+                    <select>
+                        <option>CSE</option>
+                        <option>CSE AI</option>
+                        <option>ECE</option>
+                        <option>CIVIL</option>
+                        <option>Mechatronics</option>
+                        <option>Mechanical</option>
+                        <option>CSBS</option>
+                    </select>
+                </div>
+            </label>
+            <BR/>
+            <label>
+                <input type="radio" name="options" value="B.ARCH.">B.ARCH
+                <div class="dropdown">
+                    <select>
+                        <option>INTERIOR</option>
+                        <option>BUILDINGS</option>
+                        <options>LANDSCAPE</options>
+                        <option>DESIGN APPLICATIONS</option>
+                        <option>PLANNING</option>
+                        <OPTION>THEORY OF STRUCTURES</OPTION>
+                    </select>
+                </div>
+            </label>
+        
+
+            <P name="question3">ADD SOME DETAILS ABOUT YOU THAT WILL HELP US TO KNOW WHAT KIND OF PERSON YOU ARE...</p>
+            <textarea maxlength="50" name="question3" rows="4" placeholder="drag from bottom right to resize the box"></textarea >
+            <br/>
+            <br/>
+           <div id="href">
+
+            <a href="https://www.chitkara.edu.in/">click here to visit our official site</a></div>
+            <BR/>
+        <P ALIGN="CENTER">
+            <button type="submit">Submit</button>
+        </P>
+        
+        </form>
+    </div>
+</body>
+</html>
